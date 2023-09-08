@@ -7,17 +7,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { TabMenuModule } from 'primeng/tabmenu';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { ConfigComponent } from './components/config/config.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CalendarComponent,
+    PerfilComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
